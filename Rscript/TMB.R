@@ -4,7 +4,7 @@ library(optparse)
 option_list = list(
   make_option(c("-i", "--mafffile"), type="character", default=NULL, help="input maffile", metavar="character"),
   make_option(c("-o", "--tmbfile"), type="character", default=NULL, help="output TMB file to be created", metavar="character"),
-  make_option(c("-p", "--proteinAltering"), action="store_true", default=TRUE, help="subset to protein altering mutations"), 
+  make_option(c("-p", "--proteinAltering"), action="store_true", default=FALSE, help="subset to protein altering mutations"), 
   make_option(c("-c", "--callableSpace"), type="numeric", default=1, help="callable space for the target/capure in Mb", metavar="numeric") 
 )
 
