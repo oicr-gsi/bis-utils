@@ -25,8 +25,7 @@ subsetProteinAlteringMutations <- function(data.mutations){
                "Splice_Site",
                "Translation_Start_Site",
                "Nonsense_Mutation",
-               "Nonstop_Mutation",
-               "Silent")
+               "Nonstop_Mutation")
   
   data.mutations <- data.mutations[data.mutations$Variant_Classification %in% include,]
   return (data.mutations)
